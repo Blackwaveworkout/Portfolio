@@ -1,0 +1,177 @@
+#nav1{
+
+  background-color:black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,black , purple);
+padding-bottom: 30px;
+padding-top: 30px;
+
+
+}
+
+.nav-link{
+
+color: white;
+font-size:30px;
+font-weight: bold;
+
+
+}
+
+.navbar-brand{
+color: black;
+
+
+
+}
+
+.text{
+  
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 50px;
+  text-align:center;
+}
+
+h1{
+ color: chocolate;
+ text-align:center;
+ padding-top: 20px;
+
+}
+
+#firstsec {
+
+  background-color: blueviolet;
+  height: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#secondsec {
+
+  background-color: burlywood;
+  height: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#thirdsec {
+
+  background-color: brown;
+  height: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#forthsec {
+
+  background-color: chartreuse;
+  height: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+@media only screen and (max-width: 680px) {
+  #firstsec {
+    margin-left: -100px;
+    margin-right: -100px;
+    height: 300px;
+    
+    
+    
+  }
+}  
+
+@media only screen and (max-width: 680px) {
+  #secondsec {
+    margin-left: -100px;
+    margin-right: -100px;
+    height: 300px;
+   }
+}  
+
+@media only screen and (max-width: 680px) {
+  #thirdsec {
+    margin-left: -100px;
+    margin-right: -100px;
+    height: 300px;
+   }
+}  
+
+@media only screen and (max-width: 680px) {
+  #forthsec {
+    margin-left: -100px;
+    margin-right: -100px;
+    height: 300px;
+   }
+}  
+
+@media only screen and (max-width: 680px) {
+  #nav1 {
+    background-color:black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,black , silver);
+    
+   }
+}  
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  
+  
+
+}
+
+.grid-container > div {
+  
+  background-color:black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,black , purple);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  height:auto;
+  color:white;
+  border-radius: 10px;
+  
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  
+
+}
+
+.grid-container1 > div {
+  background-color:purple;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  height:auto;
+  color: white;
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 680px) {
+  .grid-container >div {
+    background-color: chartreuse;
+    
+    
+   }
+}  
+
+.textin {
+
+padding-top: 50px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 20px;
+
+}
