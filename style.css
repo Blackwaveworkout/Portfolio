@@ -4,8 +4,6 @@
   background-image: linear-gradient(to right,black , purple);
 padding-bottom: 30px;
 padding-top: 30px;
-
-
 }
 
 .nav-link{
@@ -13,15 +11,10 @@ padding-top: 30px;
 color: white;
 font-size:30px;
 font-weight: bold;
-
-
 }
 
 .navbar-brand{
 color: black;
-
-
-
 }
 
 .text{
@@ -71,6 +64,33 @@ h1{
   margin-right: 200px;
 }
 
+#hov1:hover {
+  background-color: yellow;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+#hov2:hover {
+  background-color: green;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+#hov3:hover {
+  background-color:silver;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+#hov4:hover {
+  background-color:red;
+  border: solid;
+  border-width: 5px;
+  border-color: black;
+}
 @media only screen and (max-width: 680px) {
   #firstsec {
     margin-left: -100px;
@@ -118,7 +138,7 @@ h1{
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-image: linear-gradient(to right,black , purple);
   padding: 10px;
   
   
@@ -142,7 +162,7 @@ h1{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-image: linear-gradient(to right, purple, black);
   padding: 10px;
   
 
@@ -174,4 +194,44 @@ padding-left: 10px;
 padding-right: 10px;
 padding-bottom: 20px;
 
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
