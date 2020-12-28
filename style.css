@@ -11,6 +11,12 @@ padding-top: 30px;
 color: white;
 font-size:30px;
 font-weight: bold;
+
+}
+
+.nav-link:active {
+  background-color:red;
+  border-radius: 10px;;
 }
 
 .navbar-brand{
@@ -144,6 +150,31 @@ h1{
   
 
 }
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-image: linear-gradient(to right,black , green);
+  padding: 10px;
+  
+  
+
+}
+
+.grid-container4 > div {
+  
+  background-color:black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,black , green);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  height:auto;
+  color:white;
+  border-radius: 10px;
+  
+}
+
 
 .grid-container > div {
   
