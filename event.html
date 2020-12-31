@@ -134,6 +134,33 @@
       </ul>
   </div>
 
+  <div id="under1">
+
+    <p class="drag1">Drag the p element back and forth between the two rectangles:</p>
+
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+    </div>
+    
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    <p id="demo"></p>
+
+
+
+
+
+
+  </div>
+
+  
+
+
+  
+
 
 </body> 
 
@@ -141,7 +168,24 @@
 
 <script>
 
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
 
+function dragging(event) {
+  document.getElementById("demo").innerHTML = "";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "";
+}
 
 
 
