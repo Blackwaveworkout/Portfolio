@@ -1,9 +1,9 @@
 #nav1{
-
-  background-color:black; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right,black , purple);
+background-color:black; /* For browsers that do not support gradients */
+background-image: linear-gradient(to right,black , purple);
 padding-bottom: 30px;
 padding-top: 30px;
+
 }
 
 .nav-link{
@@ -28,6 +28,8 @@ font-weight: bold;
 
   
 }
+
+
 
 /* Drag elements*/
 
@@ -115,28 +117,31 @@ h1{
 }
 
 #hov1:hover {
-  background-color: yellow;
+  background-image: linear-gradient(to right,black ,yellow);
   border: solid;
   border-width: 5px;
   border-color: black;
 }
 
 #hov2:hover {
-  background-color: green;
+  background-image: linear-gradient(to right,black ,green);
+
   border: solid;
   border-width: 5px;
   border-color: black;
 }
 
 #hov3:hover {
-  background-color:silver;
+  background-image: linear-gradient(to right,black ,silver);
+
   border: solid;
   border-width: 5px;
   border-color: black;
 }
 
 #hov4:hover {
-  background-color:red;
+  background-image: linear-gradient(to right,black , orange  );
+
   border: solid;
   border-width: 5px;
   border-color: black;
