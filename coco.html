@@ -34,6 +34,9 @@
     <button id="but2">Show the Boxes</button>
     <button id="but3">Hide the boxes</button>
     <button id="butback">Change</button>
+    <button id="animate">Start Animation</button>
+    
+    
 
 
 
@@ -61,10 +64,26 @@
 
 </div>
 
+<div id="slide">
+
+
+
+
+
+</div>
+
 
 </body> 
 
 <script>
+
+$(document).ready(function(){
+  $("#animate").click(function(){
+    $("#slide").animate({left: '250px'});
+  });
+});
+
+
 
 $(document).ready(function(){
   $("#ppp").click(function(){
@@ -124,9 +143,20 @@ $(document).ready(function(){
   });
 });
 
+/* Stop sliding function */
+
+
 </script>
 
 <style>
+
+
+#slide{background:#98bf21;height:100px;width:100px;position:absolute;
+
+
+
+
+  }
 
 #panel {
   background-color: blue;
