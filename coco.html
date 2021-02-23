@@ -19,27 +19,66 @@
 </head> 
 
 
-<body>
+<body id="body1">
+  <div id="divr">
 
-    <div id="div1">
-
-    <p>Ths is my jQuery tutorial</p>
+    <p>Click me and ill dissapear</p>
     
+    <button id="ppp">Slide panel</button>
+    
+  </div>
+  <div id="panel">
 
-    </div>
+    <button id="but">Click me to hide paragraphs</button>
+    <button id="but1">Hide the pic above</button>
+    <button id="but2">Show the Boxes</button>
+    <button id="but3">Hide the boxes</button>
+    <button id="butback">Change</button>
 
 
 
 
-  
+
+
+  </div>
+  <div>
+    
+    <img src="surf1.jpg" alt="Trulli" width="500" height="333" id="photo">
+  </div>
+
+
  
+
+<div>
+  
+
+  <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+
+
+
+</div>
+
+
 </body> 
-
-
 
 <script>
 
+$(document).ready(function(){
+  $("#ppp").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
 $("p ").css ("color", "red");
+
+$(document).ready(function(){
+  $("#but").click(function(){
+    $("p").toggle();
+  });
+});
 
 $(document).ready(function(){
   $("p").click(function(){
@@ -48,13 +87,59 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+  $("#but1").click(function(){
+    $("#photo").toggle();
+  });
+});
 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(5000);
+  });
+});
 
+$(document).ready(function(){
+  $("#but3").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(5000);
+  });
+});
 
+/* background color change function */
+$(document).ready(function(){
+  $("#butback").click(function(){
+    $("#body1").css("color", "red");
+    $("p").css("color", "white");
+  });
+});
+/* background color change back function */
+(document).ready(function(){
+  $("#butfor").click(function(){
+    $("#body1").css("color", "white");
+    $("p").css("color", "red");
+  });
+});
 
 </script>
 
 <style>
+
+#panel {
+  background-color: blue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    margin-left:20px;
+    margin-right:20px;
+  display: none;
+  background-color: blue;
+}
 
 p {
     font-size: 50px;;
@@ -63,7 +148,16 @@ p {
     
 }
 
-#div1 {
+#div1, #div2, #div3 {
+   
+   margin-left: 30px;
+}
+
+#ppp {
+
+margin-left: 100px;
+}
+#divr {
     background-color: blue;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -73,6 +167,46 @@ p {
     margin-left:20px;
     margin-right:20px;
     
+    
+}
+
+#but {
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 5px;
+    margin-left: 30px;
+}
+#photo {
+   
+    margin-left: 30px;
+}
+
+h2 {
+    
+    margin-left: 30px;
+    
+}
+#but1 {
+    
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+  }
+
+  #but2 {
+    
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+#but3 {
+    
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
     
 }
 
